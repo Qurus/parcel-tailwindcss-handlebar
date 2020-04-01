@@ -1,0 +1,18 @@
+---
+meta:
+  author: Author Name
+  description: Some meta description
+  keywords: Some, Meta, Keywords
+  robots: index, follow
+stylesheets:
+  - ./assets/css/style.css
+---
+
+{{!< base}}
+
+<main>
+  <h1 class="text-4xl text-red-700 bg-blue-200 text-center">Welcome from index.hbs</h1>
+  <a href="./about.hbs">About</a>
+  <br />
+  {{> button}}
+</main>

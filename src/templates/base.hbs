@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  {{#block "meta"}}
+    {{> meta}}
+{{/block}}
+  <title>
+    {{> title}}
+  </title>
+  {{#block "styles"}}
+    {{#each stylesheets}}
+    <link href="{{this}}" rel="stylesheet" />
+    {{/each}}
+    {{/block}}
+</head>
+<body>
+  {{> header}}
+  {{{body}}}
+  {{> footer}}
+</body>
+</html>
